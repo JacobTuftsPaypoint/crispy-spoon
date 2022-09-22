@@ -1,0 +1,114 @@
+:root {
+ --BackgroundColour: #eff8e2;
+ --SecondaryBackgroundColour: #ffffff;
+ --PrimaryColour: #f6aca2;
+ --PrimaryColourLighter: #fbd6d1;
+ --PrimaryColourDarker: #ef5845;
+}
+
+body {
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--BackgroundColour);
+  }
+header {
+    color: var(--PrimaryColour);
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px var(--PrimaryColourLighter),
+    4px 4px var(--PrimaryColourLighter),
+    6px 6px var(--PrimaryColourLighter);
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: var(--SecondaryBackgroundColour);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+#SocialMedia{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#Contents{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+nav svg {
+    margin: 1.3rem;
+}
+nav h2{
+    align-self: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    ;
+}
+nav li {
+    font-family: 'Roboto Mono', monospace;
+    padding-right: 1rem;
+}
+nav li a {
+    color: var(--PrimaryColourDarker);
+}
+section {
+    background-color: var(--SecondaryBackgroundColour);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+section p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+section a {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: var(--PrimaryColourDarker);
+    text-decoration: none;
+}
+
+section table {
+    background-color: #E8E8E8;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+section th{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section td{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+section .percent{
+    font-weight: 700;
+    font-size: 2rem;
+}
+  

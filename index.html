@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jacob Tufts</title>
+        <meta name="description" content="Portfolio website for Jacob Tufts">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:wght@200;700&display=swap" rel="stylesheet">
+
+        <script>
+            function babyage() {
+                const DateBorn = new Date("08/10/2022");
+                const CurrentDay = new Date();
+                const Week = 24*60*60*1000*7
+                const Month = Week*4;
+                const Year = Month*12;
+                const Weeks = (CurrentDay.getTime()-DateBorn.getTime())/Week;
+                const Months = (CurrentDay.getTime()-DateBorn.getTime())/Month;
+                const Years = (CurrentDay.getTime()-DateBorn.getTime())/Year;
+                document.getElementById("Baby").innerHTML="A surprising fact about me is that i have a "+(Math.round(Weeks)).toString()+" week old (or "+(Math.round(Months)).toString()+" Months/"+(Math.round(Years)).toString()+" Years)";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Jacob Tufts</h1>
+        </header>
+        <nav id="SocialMedia">
+            <!--Linked In-->
+            <a href="https://www.linkedin.com/in/JacobTufts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#8bb7f0" d="M4.5 4.5H75.5V75.5H4.5z"/><path fill="#4e7ab5" d="M75,5v70H5V5H75 M76,4H4v72h72V4L76,4z"/><path fill="#fff" d="M16 32.154L27.077 32.154 27.077 54.169 27.077 64 16 64zM21.538 28.923L21.538 28.923c-3.323 0-5.538-2.354-5.538-5.262s2.215-5.123 5.538-5.123 5.4 2.215 5.538 5.123C27.077 26.569 25 28.923 21.538 28.923zM64.054 64H53.119c0 0 0-16.539 0-17.77s-.137-5.468-4.784-5.468c-4.101 0-4.784 3.964-4.784 5.468s0 17.77 0 17.77H32.615V32.561h10.935v4.237c0 0 2.187-4.237 8.611-4.237 6.561 0 11.892 4.511 11.892 13.669V64z"/></svg></a>
+            <!--Facebook-->
+            <a href="https://www.facebook.com/jacob.tufts.984/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#8bb7f0" d="M4.5 4.5H75.5V75.5H4.5z"/><path fill="#4e7ab5" d="M75,5v70H5V5H75 M76,4H4v72h72V4L76,4z"/><path fill="#fff" d="M54,75V48h9.859l1.396-10H54v-6.768c0-3.135,1.403-5.272,5.899-5.272L66,25.958V16.45 c-0.992-0.132-4.762-0.427-8.722-0.427C49.01,16.023,44,21.069,44,30.337V38H34v10h10v27H54z"/></svg></a>
+            <!--Instagram-->
+            <a href="https://www.instagram.com/tuftyispie/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#8585cc" d="M61.7,2.5H18.3C9.6,2.5,2.5,9.6,2.5,18.3v43.4c0,8.7,7.1,15.8,15.8,15.8h43.4 c8.7,0,15.8-7.1,15.8-15.8V18.3C77.5,9.6,70.4,2.5,61.7,2.5L61.7,2.5z"/><path fill="#8d8dd8" d="M2.5,18.3v43.4c0,8.7,7.1,15.8,15.8,15.8h43.4c8.7,0,15.8-7.1,15.8-15.8V18.3c0-0.6,0-1.3-0.1-1.9 C64.8,8.6,49.9,4,34,4C24,4,14.4,5.8,5.5,9.1C3.6,11.7,2.5,14.9,2.5,18.3z"/><path fill="#bd82f4" d="M2.5,61.7c0,8.7,7.1,15.8,15.8,15.8h43.4c8.7,0,15.8-7.1,15.8-15.8V26.1C65.3,17.3,50.3,12,34,12 c-11.3,0-21.9,2.5-31.5,7V61.7z"/><path fill="#ed73f4" d="M2.5,61.7c0,8.7,7.1,15.8,15.8,15.8h43.4c8.7,0,15.8-7.1,15.8-15.8V36.4C65.9,26.2,50.7,20,34,20 c-11.4,0-22.1,2.9-31.5,8V61.7z"/><path fill="#f97dcd" d="M2.5,61.7c0,8.7,7.1,15.8,15.8,15.8h43.4c8.7,0,15.8-7.1,15.8-15.8V47.7C66.9,35.6,51.3,28,34,28 c-11.6,0-22.4,3.4-31.5,9.3V61.7z"/><path fill="#fc9c95" d="M2.5,61.7c0,8.7,7.1,15.8,15.8,15.8h43.4c8.7,0,15.8-7.1,15.8-15.8v-0.4C68.9,46.2,52.7,36,34,36 c-11.9,0-22.9,4.2-31.5,11.2V61.7z"/><path fill="#ffac99" d="M2.5,58.2v3.5c0,8.7,7.1,15.8,15.8,15.8h43.4c4.8,0,9-2.1,11.9-5.4C67.9,55.7,52.3,44,34,44 C21.5,44,10.2,49.5,2.5,58.2z"/><path fill="#ffc49c" d="M18.3,77.5h43.4c1.7,0,3.4-0.3,5-0.8C62.6,62.4,49.5,52,34,52c-12.7,0-23.7,7-29.6,17.3 C7.1,74.2,12.3,77.5,18.3,77.5z"/><path fill="#ffde8d" d="M18.3,77.5h40.3C55,67.3,45.4,60,34,60c-10.5,0-19.6,6.3-23.7,15.3C12.6,76.7,15.4,77.5,18.3,77.5z"/><path fill="#fff69f" d="M18.3,77.5h31.6c-3-5.7-9-9.5-15.9-9.5c-6.9,0-12.8,3.8-15.9,9.5C18.2,77.5,18.2,77.5,18.3,77.5z"/><path fill="#8b75a1" d="M62,3c8.3,0,15,6.7,15,15v44c0,8.3-6.7,15-15,15H18C9.7,77,3,70.3,3,62V18C3,9.7,9.7,3,18,3H62 M62,2 H18C9.2,2,2,9.2,2,18v44c0,8.8,7.2,16,16,16h44c8.8,0,16-7.2,16-16V18C78,9.2,70.8,2,62,2L62,2z"/><path fill="#fff" d="M55 22A3 3 0 1 0 55 28 3 3 0 1 0 55 22zM40 54c-7.7 0-14-6.3-14-14s6.3-14 14-14 14 6.3 14 14S47.7 54 40 54zM40 30c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10 5.5 0 10-4.5 10-10C50 34.5 45.5 30 40 30z"/><path fill="#fff" d="M51,68H29c-9.4,0-17-7.6-17-17V29c0-9.4,7.6-17,17-17h22c9.4,0,17,7.6,17,17v22 C68,60.4,60.4,68,51,68z M29,16c-7.2,0-13,5.8-13,13v22c0,7.2,5.8,13,13,13h22c7.2,0,13-5.8,13-13V29c0-7.2-5.8-13-13-13H29z"/></svg></a>
+            <!--Tiktok-->
+            <a href="https://www.tiktok.com/@tuftyispie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#b0c1d4" d="M14.172,4.5h51.654c5.343,0,9.674,4.331,9.674,9.672v51.654c0,5.343-4.331,9.674-9.672,9.674H14.172 c-5.341,0-9.672-4.331-9.672-9.672V14.172C4.5,8.831,8.831,4.5,14.172,4.5z"/><path fill="#66798f" d="M65.828,76H14.172C8.563,76,4,71.437,4,65.828V14.172C4,8.563,8.563,4,14.172,4h51.654 C71.436,4,76,8.563,76,14.172v51.654C76,71.436,71.437,76,65.828,76z M14.172,5C9.114,5,5,9.114,5,14.172v51.656 C5,70.886,9.114,75,14.172,75h51.656C70.886,75,75,70.885,75,65.826V14.172C75,9.114,70.885,5,65.826,5H14.172z"/><path fill="#ffb5d2" d="M50.271,33.308c3.108,2.221,6.917,3.526,11.029,3.526v-7.911c-0.779,0-1.554-0.081-2.315-0.243 v6.226c-4.112,0-7.918-1.308-11.029-3.526v16.141c0,8.074-6.55,14.62-14.628,14.62c-3.014,0-5.816-0.911-8.143-2.473 c2.657,2.714,6.36,4.398,10.459,4.398c8.078,0,14.628-6.546,14.628-14.62V33.308L50.271,33.308z M53.129,25.329 c-1.588-1.734-2.631-3.976-2.858-6.455v-1.018h-2.195C48.628,21.006,50.514,23.698,53.129,25.329L53.129,25.329z M30.295,53.474 c-0.888-1.164-1.367-2.586-1.365-4.049c0-3.694,2.996-6.688,6.692-6.688c0.688,0,1.373,0.105,2.029,0.314v-8.086 c-0.767-0.105-1.54-0.15-2.315-0.134v6.293c-0.657-0.209-1.341-0.314-2.031-0.314c-3.696,0-6.692,2.994-6.692,6.688 C26.615,50.112,28.111,52.374,30.295,53.474z"/><path fill="#fff" d="M47.956,31.381c3.108,2.221,6.917,3.526,11.029,3.526v-6.226c-2.296-0.489-4.327-1.688-5.856-3.355 c-2.615-1.631-4.499-4.321-5.051-7.471h-5.765v31.591c-0.014,3.682-3.004,6.664-6.692,6.664c-2.173,0-4.104-1.035-5.327-2.639 c-2.183-1.101-3.68-3.363-3.68-5.974c0-3.694,2.996-6.688,6.692-6.688c0.708,0,1.39,0.11,2.031,0.314v-6.291 c-7.936,0.164-14.318,6.644-14.318,14.616c0,3.98,1.59,7.587,4.169,10.222c2.327,1.562,5.13,2.473,8.143,2.473 c8.078,0,14.628-6.546,14.628-14.62L47.956,31.381L47.956,31.381z"/><path fill="#b5ddf5" d="M58.985,28.683v-1.684c-2.071,0.004-4.098-0.576-5.856-1.672 C54.683,27.029,56.73,28.202,58.985,28.683z M48.076,17.856c-0.053-0.302-0.093-0.604-0.12-0.909v-1.018h-7.96v31.593 c-0.012,3.682-3.004,6.664-6.692,6.664c-1.083,0-2.104-0.256-3.01-0.714c1.223,1.603,3.154,2.639,5.327,2.639 c3.688,0,6.678-2.982,6.692-6.664V17.856H48.076z M35.336,34.833V33.04c-0.665-0.091-1.335-0.136-2.008-0.136 c-8.08,0-14.628,6.546-14.628,14.62c0,5.063,2.574,9.524,6.485,12.147c-2.58-2.635-4.169-6.242-4.169-10.222 C21.015,41.477,27.399,34.996,35.336,34.833z"/><path fill="#66798f" d="M47.956,15.929v1.018c0.028,0.306,0.067,0.607,0.12,0.909h0.002h2.193v1.018 c0.227,2.477,1.268,4.717,2.854,6.45c0.001,0.001,0.003,0.002,0.004,0.003c1.751,1.093,3.771,1.672,5.834,1.672 c0.007,0,0.014,0,0.021,0v1.682c0.761,0.162,1.536,0.243,2.315,0.243v7.911c-4.112,0-8.129-1.306-11.237-3.526v16.139 c0,8.074-6.341,14.62-14.419,14.62c-4.091,0-7.788-1.678-10.444-4.383c0.041,0.036,0.055,0.049,0.056,0.049 c0.001,0-0.071-0.064-0.071-0.064c0.005,0.005,0.01,0.01,0.015,0.015c-0.005-0.004-0.01-0.009-0.015-0.013 c-3.911-2.623-6.485-7.084-6.485-12.147c0-8.074,6.548-14.557,14.628-14.557c0.672,0,1.343,0.045,2.008,0.136v1.728 c0.1-0.002,0.201-0.003,0.301-0.003c0.674,0,1.347,0.046,2.014,0.137v8.086c-0.657-0.209-1.341-0.314-2.029-0.314 c-3.696,0-6.692,2.994-6.692,6.688c-0.002,1.462,0.477,2.883,1.363,4.046c0,0,0.001,0,0.001,0.001 c0.905,0.458,1.927,0.714,3.01,0.714c3.688,0,6.68-2.982,6.692-6.664V15.929H47.956 M39.033,15.033l-0.017,32.45 c-0.01,3.122-2.584,5.703-5.712,5.703c-0.824,0-1.614-0.17-2.351-0.507c-0.663-0.948-1.025-2.095-1.023-3.253 c0-3.138,2.553-5.689,5.692-5.689c0.59,0,1.171,0.09,1.726,0.266l1.303,0.415v-1.368v-8.086v-0.873l-0.865-0.118 c-0.481-0.065-0.966-0.109-1.45-0.131V33.04v-0.873l-0.865-0.055C34.765,32.016,34.044,32,33.328,32 C24.711,32,17.7,38.911,17.7,47.524c0,5.185,2.558,10.009,6.848,12.924C27.506,63.427,31.442,65,35.643,65 c8.617,0,15.368-6.992,15.336-15.573V35.123c3.067,1.734,6.758,2.711,10.32,2.711h1v-1v-7.911v-1h-1c-0.44,0-0.88-0.029-1.315-0.085 v-0.84L60,26.031l-1.001,0.001c-1.851,0-3.659-0.535-5.227-1.485c-1.432-1.607-2.295-3.582-2.5-5.721v-0.971v-1h-1h-1.315V15 L39.033,15.033z"/></svg></a>
+            <!--Pinterest-->
+            <a href="https://www.pinterest.co.uk/jacobatufts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#f78f8f" d="M40,77.5C19.322,77.5,2.5,60.678,2.5,40S19.322,2.5,40,2.5S77.5,19.322,77.5,40S60.678,77.5,40,77.5 z"/><path fill="#c74343" d="M40,3c20.402,0,37,16.598,37,37S60.402,77,40,77S3,60.402,3,40S19.598,3,40,3 M40,2 C19.013,2,2,19.013,2,40s17.013,38,38,38s38-17.013,38-38S60.987,2,40,2L40,2z"/><g><path fill="#fff" d="M39.763,18C24.197,18,15.93,28.449,15.93,39.828c0,5.29,2.816,11.877,7.322,13.974 c0.683,0.318,1.049,0.178,1.207-0.482c0.119-0.501,0.728-2.952,1.001-4.091c0.088-0.364,0.045-0.677-0.25-1.034 c-1.49-1.807-2.684-5.131-2.684-8.232c0-7.955,6.024-15.654,16.287-15.654c8.861,0,15.067,6.038,15.067,14.675 c0,9.758-4.928,16.518-11.339,16.518c-3.541,0-6.191-2.928-5.342-6.519c1.017-4.287,2.988-8.915,2.988-12.009 c0-2.77-1.487-5.081-4.564-5.081c-3.62,0-6.527,3.744-6.527,8.76c0,3.194,1.079,5.355,1.079,5.355s-3.575,15.115-4.23,17.93 c-0.716,3.078-0.447,7.381-0.136,10.236c0.823,0.337,1.662,0.643,2.514,0.92c1.47-2.401,3.637-6.285,4.445-9.392 c0.438-1.687,2.247-8.575,2.247-8.575c1.176,2.243,4.612,4.142,8.267,4.142C54.162,61.269,62,51.264,62,38.833 C62,26.916,52.276,18,39.763,18z"/></g></svg></a>
+            <!--Youtube-->
+            <a href="https://www.youtube.com/channel/UCmBDur0qRNIj3ygDQdTZ0aQ/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80px" height="80px"><path fill="#f78f8f" d="M75.67,57.783c-0.758,3.92-3.98,6.907-7.96,7.467c-6.254,0.933-16.219,2-27.97,2 c-11.561,0-21.586-1.067-28.03-2c-3.98-0.56-7.202-3.547-7.96-7.467c-0.758-4.293-1.351-9.89-1.351-17.73s0.718-13.437,1.476-17.73 c0.758-3.92,3.98-6.907,7.96-7.467c6.254-0.933,16.28-2.107,28.03-2.107s21.526,1.173,27.97,2.107c3.98,0.56,7.202,3.547,7.96,7.467 c0.758,4.293,1.746,9.89,1.746,17.73C77.351,47.893,76.428,53.49,75.67,57.783z"/><path fill="#c74343" d="M39.905,13c11.72,0,21.851,1.111,28.29,2.044c3.584,0.504,6.444,3.183,7.115,6.65 C76.035,25.804,77,32.173,77,39.976c-0.213,8.826-1.151,15.273-1.688,18.314c-0.674,3.483-3.534,6.162-7.126,6.668 C64.072,65.572,53.078,67,39.905,67c-12.338,0-23.018-1.28-28.29-2.044c-3.584-0.504-6.444-3.183-7.115-6.65 C3.816,54.428,3,48.105,3,40s0.816-14.428,1.498-18.29c0.674-3.483,3.534-6.162,7.126-6.668C15.739,14.428,26.732,13,39.905,13 M39.905,12c-11.751,0-22.175,1.12-28.429,2.053c-3.98,0.56-7.202,3.547-7.96,7.467C2.758,25.813,2,32.16,2,40 s0.758,14.187,1.516,18.48c0.758,3.92,3.98,6.907,7.96,7.467C17.92,66.88,28.344,68,39.905,68c11.751,0,22.175-1.12,28.429-2.053 c3.98-0.56,7.202-3.547,7.96-7.467C77.052,54.187,77.81,47.84,78,40c0-7.84-0.948-14.187-1.706-18.48 c-0.758-3.92-3.98-6.907-7.96-7.467C61.89,13.12,51.656,12,39.905,12L39.905,12z"/><path fill="#fff" d="M32 53L32 27 56 40z"/></svg></a>
+        </nav>
+        <nav id="Contents">
+            <h2>Contents</h2>
+            <ol>
+                <li><a href="#AboutMe">About Me <i>(My Style)</i></a></li>
+                <li><a href="#WhatIValue">What I Value</a></li></li>
+                <li><a href="#NoPatience">What I Don't Have Patience For</a></li>
+                <li><a href="#Communicate">How To Communicate With Me</a></li>
+                <li><a href="#Help">How To Help Me</a></li>
+                <li><a href="#Misunderstood">What People Misunderstand About Me</a></li>
+                <li><a href="#Personality">16 Personalities Type</a></li>
+                <li><a href="#Interest">My Areas Of Interest</a></li>
+            </ol>
+        </nav>
+        <main>
+            <section id="AboutMe">
+                <h3>About Me</h3>
+                <p>I see myself as someone that excels in problem solving and troubleshooting. I find both simple and natural to me and I can easily handle scenarios where I must decompose issues to work towards finding a solution, even whilst leading a team.</p>
+                <p>I’ve been programming for years now and I’m fluent in Python and JavaScript as well as HTML and CSS. This is supported by a working knowledge of NoSQL, SQL3 and a whole host of various frameworks, APIs, and Modules.</p>
+                <p>I have just started a software engineering apprenticeship with Paypoint where I will work with C# and the azure cloud.</p> 
+                <p id="Baby"></p>
+                <script>babyage()</script>
+            </section>
+            <section id="WhatIValue">
+                <h3>What I Value</h3>
+                <p>I value getting to spend time with my family and doing things that I enjoy. My hobbies are very important to me, and I love getting to spend time soldering and creating new electronic circuits or photographing abandoned buildings with friends. </p>
+                <p>I make sure to spend plenty of time with my new-born son <i>(he’s on me whilst I write this)</i> so that I can create a long lasting bond with him.</p>
+            </section>
+            <section id="NoPatience">
+                <h3>What I Don't Have Patience For</h3>
+                <p>I don’t have patience for people who have unrealistic expectations. It is always good to set a challenge and work as hard as you can but being held to standards you cannot yet achieve is very unfair and can leave you feeling unmotivated. You will never get the boost that comes from succeeding in something such as completing a project or learning a new skill. You should always be able to work at the level you feel comfortable at.</p>
+            </section>
+            <section id="Communicate">
+                <h3>How To Communicate With Me</h3>
+                <p>I prefer to be contacted over email as it keeps everything professional in one organised place without having to search amongst different chat apps. I prefer a non-formal style of email but will do whatever the other person is comfortable with.</p>
+            </section>
+            <section id="Help">
+                <h3>How To Help Me</h3>
+                <p>I always like to attack a challenge or task myself before getting help as sometimes the solution can be found after just persevering though some different methods independently. When I’m struggling I can be hesitant to ask for help but I will if it seems I wont be able to complete the task.</p>
+            </section>
+            <section id="Misunderstood">
+                <h3>What People Misunderstand About Me</h3>
+                <p>Ooga</p>
+            </section>
+            <section id="Personality">
+                <h3>16 Personalities Type</h3>
+                <table>
+                    <tr>
+                        <th style="color: #4298b4;">Mind</th>
+                        <th style="color: #e4ae3a;">Energy</th>
+                        <th style="color: #33a474;">Nature</th>
+                        <th style="color: #88619a;">Tactics</th>
+                        <th style="color: #f25e62;">Identity</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #4298b4;">Extraverted</td>
+                        <td style="color: #e4ae3a;">Observant</td>
+                        <td style="color: #33a474;">Thinking</td>
+                        <td style="color: #88619a;">Prospecting</td>
+                        <td style="color: #f25e62;">Turbulant</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #4298b4;" class="percent">56%</td>
+                        <td style="color: #e4ae3a;" class="percent">52%</td>
+                        <td style="color: #33a474;" class="percent">76%</td>
+                        <td style="color: #88619a;" class="percent">63%</td>
+                        <td style="color: #f25e62;" class="percent">64%</td>
+                    </tr>
+                </table>
+                <a href="https://www.16personalities.com/estp-personality">ESTP Personality Website</a>
+            </section>
+            <section id="Interest">
+                <h3>My Areas Of Interest</h3>
+                <p>Ooga</p>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
